@@ -1,0 +1,43 @@
+{
+    "semantic_mappings": {
+        "business_concepts": {
+            "premium_user": {
+                "visual_style": "gold-glow",
+                "tokens": [
+                    "border-yellow-500",
+                    "shadow-gold",
+                    "text-gradient-gold"
+                ],
+                "logic": "Applica sempre il gradiente dorato sul bordo dell'avatar."
+            },
+            "critical_alert": {
+                "visual_style": "destructive-pulse",
+                "tokens": [
+                    "bg-red-500/10",
+                    "text-red-500",
+                    "animate-pulse"
+                ],
+                "logic": "Deve bloccare l'interazione con il resto della pagina (Overlay obbligatorio)."
+            },
+            "data_loading": {
+                "visual_style": "skeleton-shimmer",
+                "tokens": [
+                    "bg-slate-800",
+                    "animate-pulse"
+                ],
+                "logic": "Non usare spinner per aree content-heavy, usare skeleton screens che mimano il layout."
+            }
+        },
+        "interaction_states": {
+            "disabled_action": {
+                "visual_style": "ghost-muted",
+                "tokens": [
+                    "opacity-50",
+                    "cursor-not-allowed",
+                    "grayscale"
+                ],
+                "logic": "Non nascondere l'elemento, rendilo spettrale per mantenere il layout stabile."
+            }
+        }
+    }
+}

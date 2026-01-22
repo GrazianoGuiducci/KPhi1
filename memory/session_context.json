@@ -1,0 +1,20 @@
+{
+  "project_name": "ag-smart-system",
+  "last_update": "2026-01-18 17:08:02",
+  "active_skills": [
+    "factory-kernel"
+  ],
+  "short_term_memory": {
+    "current_focus": "System Initialization",
+    "recent_decisions": [
+      {
+        "timestamp": "2026-01-18 17:08:02",
+        "decision": "Orchestrator ha suggerito la skill: ui-architect"
+      }
+    ]
+  },
+  "long_term_memory": {
+    "learned_principles": [],
+    "bottlenecks_identified": []
+  }
+}

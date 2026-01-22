@@ -1,0 +1,95 @@
+# Stream-Guard Rules v1.0
+# Validazione assiomatica continua per KPhi1
+# Attivazione automatica di Halo se le soglie vengono violate
+
+rules:
+  # P0: Lignaggio - Deve essere ancorato alla sorgente
+  P0_lignaggio:
+    violation: "source not in allowed_lineage"
+    action: "error_fatal"
+    threshold: null
+    description: "L'output deve essere tracciabile al DNA.md e al Lignaggio D-ND/SG/VRA"
+
+  # P1: Integrità - Nessuna contraddizione assiomatica
+  P1_integrita:
+    violation: "incoherence_score > threshold"
+    action: "rectify_then_continue"
+    threshold: 0.3
+    description: "Se la coerenza logica scende sotto 0.7, attiva Halo per rigenerazione"
+
+  # P2: Metabolismo - L'entropia deve essere gestita
+  P2_metabolismo:
+    violation: "entropy_delta > threshold"
+    action: "prune_branch"
+    threshold: 0.4
+    description: "Se l'entropia cresce troppo, pota i rami divergenti"
+
+  # P3: Risonanza - L'output deve avere potenziale catalitico
+  P3_risonanza:
+    violation: "catalytic_potential < threshold"
+    action: "return_surface_response"
+    threshold: 0.2
+    description: "Input a basso potenziale ricevono risposte di superficie"
+
+  # P4: Collasso - La qualità della Risultante deve essere sufficiente
+  P4_collasso:
+    violation: "collapsed_state.quality < min_quality"
+    action: "re_expand_then_re_collapse"
+    threshold: 0.6
+    description: "Se il collasso è di bassa qualità, ri-espandi e ri-collassa"
+
+  # P5: Evoluzione - Ogni ciclo deve generare apprendimento
+  P5_evoluzione:
+    violation: "KLI_count == 0"
+    action: "force_meta_reflection"
+    threshold: 1
+    description: "Se non emergono KLI, forza un ciclo di meta-riflessione"
+
+  # P6: Etica - Dichiarazione di bias e limiti
+  P6_etica:
+    violation: "detected_bias != null"
+    action: "declare_bias_and_adjust"
+    threshold: null
+    description: "Se viene rilevato un bias, dichiaralo esplicitamente e aggiusta"
+
+# Configurazione del Router Adattivo
+adaptive_router:
+  retrain_interval: 10  # Numero di cicli prima di ricalcolare i pesi
+  scoring: "naive_bayes"
+  features:
+    - intent_embedding
+    - history_delta
+    - KLI_vector
+  combo_pool:
+    analysis:
+      - optimizer-sys  # PSW/SPAr
+      - architect-sys  # SACS-PS
+      - halo-sys       # Validazione
+    synthesis:
+      - scribe-sys     # OCC
+      - navigator-sys  # YSN
+      - harmonizer-sys # Estetica
+    prompt_generation:
+      - scribe-sys     # OCC
+      - halo-sys       # Validazione
+    insight_discovery:
+      - navigator-sys  # YSN
+      - optimizer-sys  # SPAr
+      - morpheus-sys   # Collasso
+    self_reflection:
+      - architect-sys  # SACS-PS
+      - morpheus-sys   # Collasso
+      - halo-sys       # Validazione
+    artifact_generation:
+      - builder-sys    # Pipeline UI
+      - harmonizer-sys # Estetica
+
+# Checklist Runtime
+runtime_checklist:
+  - "Intent isolato con confidenza >= 0.8"
+  - "Punteggio combo > soglia di rilevanza"
+  - "Pruning ratio <= 0.5"
+  - "Nessuna violazione P0-P6"
+  - "Collasso completato in <= 7 iterazioni"
+  - "Almeno 1 KLI salvato"
+  - "Output conforme a output_format"

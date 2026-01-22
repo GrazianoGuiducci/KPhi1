@@ -1,0 +1,32 @@
+/*
+* DESIGN SYSTEM TOKENS - AG-SMART-SYSTEM
+* Source of Truth for: ui-architect
+*/
+
+:root {
+  /* COLORS: Vibrant Dark Mode */
+  --bg-primary: #0f172a;
+  --bg-secondary: #1e293b;
+  --accent-primary: #38bdf8; /* Sky Blue */
+  --accent-secondary: #818cf8; /* Indigo */
+  --text-primary: #f8fafc;
+  --text-muted: #94a3b8;
+
+  /* GLASSMORPHISM */
+  --glass-bg: rgba(30, 41, 59, 0.7);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --blur-md: 12px;
+
+  /* SPACING */
+  --space-unit: 0.25rem; /* 4px */
+  
+  /* ANIMATIONS */
+  --ease-spring: cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+/* UTILITY CLASSES (Pseudo-Tailwind) */
+.glass-panel {
+  background: var(--glass-bg);
+  backdrop-filter: blur(var(--blur-md));
+  border: 1px solid var(--glass-border);
+}
