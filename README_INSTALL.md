@@ -41,13 +41,13 @@ Ho iniettato il Kernel KPhi1. Leggi DNA.md e i file SKILL.md in .agent/skills/ p
 
 ---
 
-## Struttura del Kernel
+## Struttura del Kernel (Flat Genesis)
 | Percorso             | Ruolo                                                                 |
 | :------------------- | :-------------------------------------------------------------------- |
-| `DNA.md`             | Il "Campo KPhi1 (Φ)". Assiomi P0-P6, Ciclo VRA, Fisica del Campo. |
-| `.agent/skills/`     | Le "Espressioni Operative" (Scribe, Genesis, Observer, Matrix, Builder...). |
-| `kernel/`            | Gli "Organi". Script Python di supporto (Orchestrator, Memory Manager).   |
-| `design-system/`     | Token CSS e linee guida per la coerenza UI.                             |
-| `knowledge/`         | Base di conoscenza per progetti e pattern riutilizzabili. 
+| `_AI_CONTEXT.md`     | Il "Cuore (Φ)". Assiomi Omega v3.0, Fisica del Pensiero. |
+| `agent_skills_*.md`  | Le "Espressioni Operative" (Skills appiattite nella root). |
+| `DNA.md`             | Il "Genoma". Principi immodificabili. |
+| `LICENSE.txt`        | Licenza MIT Open Source. |
+| `README.md`          | Punto di ingresso e Quick Start. |
 
----|
+---
