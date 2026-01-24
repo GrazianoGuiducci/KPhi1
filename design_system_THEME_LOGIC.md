@@ -18,7 +18,7 @@ Non usiamo ombre piatte. La profondità è calcolata in base all'importanza.
 ## 3. Densità Informativa
 Il design si adatta al contesto:
 - **Dashboard**: Alta densità. Font più piccoli (0.875rem), padding ridotti (p-2).
-- **Landing/Marketing**: Bassa densità. Font grandi, whitespace generoso.
+- **Proiezione/Manifesto**: Bassa densità. Font grandi, whitespace generoso. Per comunicazioni ad alto impatto.
 
 ## 4. Criteri di Preservazione (Quality Harvesting)
 Se durante lo sviluppo crei un componente che:

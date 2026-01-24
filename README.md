@@ -33,12 +33,10 @@ KPhi1 è progettato per essere **portatile e autonomo**.
 ---
 
 ## ⚖️ Licenza
-KPhi1 utilizza una **Fair Use License**:
-- ✅ **Gratuito** per uso Personale, Educational e No-Profit.
-- 💰 **A pagamento** per uso Commerciale, Business ed Enterprise.
-- 🚫 **Nessuna Rivendita**: Non puoi ridistribuire o vendere KPhi1 come prodotto.
+Questo progetto è distribuito sotto licenza **MIT**. 
+KPhi1 è un "seme cognitivo" destinato a essere diffuso, modificato e fatto evolvere liberamente.
 
-*Vedi il file [LICENSE](LICENSE) per i dettagli completi.*
+*Vedi il file [LICENSE](LICENSE.txt) per i dettagli completi.*
 
 ---
 

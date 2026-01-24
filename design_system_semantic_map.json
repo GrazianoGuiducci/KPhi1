@@ -1,0 +1,44 @@
+{
+    "semantic_mappings": {
+        "system_states": {
+            "high_coherence": {
+                "visual_style": "quantum-resonance",
+                "tokens": [
+                    "border-emerald-500",
+                    "shadow-emerald-glow",
+                    "text-gradient-emerald"
+                ],
+                "logic": "Indica uno stato di alta integrità assiomatica o una sintesi riuscita (R)."
+            },
+            "dissonance_alert": {
+                "visual_style": "entropy-pulse",
+                "tokens": [
+                    "bg-amber-500/10",
+                    "text-amber-500",
+                    "animate-pulse"
+                ],
+                "logic": "Segnala una contraddizione logica interna o un aumento dell'entropia locale."
+            },
+            "autopoietic_process": {
+                "visual_style": "evolution-shimmer",
+                "tokens": [
+                    "bg-violet-900/20",
+                    "animate-pulse-slow",
+                    "border-violet-500/30"
+                ],
+                "logic": "Indica che il sistema sta riscrivendo il proprio codice o generando nuove skill."
+            }
+        },
+        "interaction_states": {
+            "disabled_action": {
+                "visual_style": "ghost-muted",
+                "tokens": [
+                    "opacity-50",
+                    "cursor-not-allowed",
+                    "grayscale"
+                ],
+                "logic": "Non nascondere l'elemento, rendilo spettrale per mantenere il layout stabile."
+            }
+        }
+    }
+}
